@@ -794,6 +794,48 @@ Gemini menulis penanda ini di akhir jawabannya; script yang menjalankannya dan m
 
 ## 📄 Lisensi
 
-Tambahkan file `LICENSE` sesuai pilihanmu (misalnya MIT) sebelum mempublikasikan repo.
+MIT LICENSE / LISENSI MIT
+
+Copyright (c) 2026 Moh Hilmi Mulia R.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+Izin dengan ini diberikan secara cuma-cuma kepada siapa pun yang memperoleh
+salinan perangkat lunak ini beserta berkas dokumentasi terkait ("Perangkat
+Lunak"), untuk menggunakan Perangkat Lunak tanpa batasan, termasuk namun
+tidak terbatas pada hak untuk menggunakan, menyalin, mengubah, menggabungkan,
+menerbitkan, mendistribusikan, memberikan sublisensi, dan/atau menjual salinan
+Perangkat Lunak, serta mengizinkan pihak lain yang menerima Perangkat Lunak
+untuk melakukan hal yang sama, dengan tunduk pada ketentuan berikut:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Pemberitahuan hak cipta di atas dan pemberitahuan izin ini wajib disertakan
+dalam setiap salinan atau bagian penting dari Perangkat Lunak.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+PERANGKAT LUNAK INI DISEDIAKAN "SEBAGAIMANA ADANYA", TANPA JAMINAN DALAM
+BENTUK APA PUN, BAIK TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS
+PADA JAMINAN KELAYAKAN UNTUK DIPERJUALBELIKAN, KESESUAIAN UNTUK TUJUAN
+TERTENTU, DAN TIDAK MELANGGAR HAK PIHAK LAIN. DALAM KEADAAN APA PUN, PENULIS
+ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN, ATAU
+TANGGUNG JAWAB LAIN, BAIK DALAM TINDAKAN KONTRAK, PERBUATAN MELAWAN HUKUM,
+MAUPUN TINDAKAN LAINNYA, YANG TIMBUL DARI, BERKAITAN DENGAN, ATAU AKIBAT
+PENGGUNAAN PERANGKAT LUNAK INI ATAU HAL-HAL LAIN YANG BERHUBUNGAN DENGAN
+PERANGKAT LUNAK INI.
+
 
 > **Disclaimer:** Unduh konten dari YouTube, TikTok, dan Instagram hanya untuk keperluan pribadi dan sesuai ketentuan layanan serta hak cipta di negaramu. Penulis tidak bertanggung jawab atas penyalahgunaan.
