@@ -438,6 +438,7 @@ Blok `telegram-bot-api` hanya dipakai di **Jalur B**. Pada Jalur A, hapus blok i
 - **Perintah tetap didahulukan.** Teks yang cocok dengan perintah (`yt`, `nas`, `ingatkan`, dst.) langsung dijalankan tanpa lewat AI; sisanya baru ditanyakan ke Gemini.
 - **Pertanyaan fakta terkini selalu dicari.** Berita, harga, skor, dan sejenisnya dicari di web walaupun AI tidak meminta.
 - **Satu file.** Seluruh fitur (termasuk server Mini App Python) ada di satu file `.sh`; server Mini App ditulis ulang otomatis tiap bot dijalankan.
+- **Folder `potongan-script-sh/` hanya bahan baca.** Isinya potongan hasil pemisahan dari `telegram-control-local-opensource.sh` per bahasa (Python, HTML, CSS, JavaScript, dan teks pesan), supaya kode lebih mudah dipelajari. Folder ini **tidak dipakai saat bot berjalan**; yang dijalankan tetap script `.sh`-nya. Mengubah file di folder itu tidak mengubah perilaku bot.
 
 ---
 
@@ -576,6 +577,8 @@ cd bot-telegram-by-devmp
 > ⚠️ **Nama file harus `telegram-control-local.sh` (atau `telegram-control.sh`).**
 > Perintah `status` mencari proses dengan nama itu; file bernama `telegram-control-local-opensource.sh` akan membuat status bot selalu tampil ❌ walau bot berjalan. Itu sebabnya file disalin dengan nama baru.
 > Shebang script: `#!/data/data/com.termux/files/usr/bin/bash`.
+
+> 📁 Kamu hanya perlu `telegram-control-local-opensource.sh`. Folder `potongan-script-sh/` tidak perlu disalin; itu hanya bahan baca (lihat [Hal penting](#hal-penting)).
 
 ✅ **Cek:** `bash -n ~/telegram-control-local.sh && echo "sintaks OK"`
 
@@ -1457,4 +1460,3 @@ Proyek ini dirilis dengan **Lisensi MIT** — lihat berkas [LICENSE](LICENSE). K
 Hak cipta © 2026 Moh Hilmi Mulia R.
 
 > **Disclaimer:** Unduh konten dari YouTube, TikTok, dan Instagram hanya untuk keperluan pribadi dan sesuai ketentuan layanan serta hak cipta di negaramu. Penulis tidak bertanggung jawab atas penyalahgunaan.
-
