@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Tic Tac Toe</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="tictactoe.css"></head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<div class="card">
+  <div class="fx hide" id="fx"></div>
+  <div id="menu" class="mn">
+    <div class="hero">
+      <div class="logo" id="logo"></div>
+      <h1>TIC TAC TOE</h1>
+      <p>Tiga sejajar, kamu menang!</p>
+    </div>
+    <button class="big p" id="mb"><span class="ic">🤖</span><span><b>Lawan Bot</b><small>4 tingkat: Mudah sampai Mustahil, skor tersimpan</small></span></button>
+    <button class="big q" id="mf"><span class="ic">👥</span><span><b>Main dengan Teman</b><small>Undang teman lewat bot</small></span></button>
+  </div>
+  <div id="fr" class="mn hide">
+    <div class="tp"><button id="fb">← Kembali</button><span>Pilih teman</span></div>
+    <div id="fl"></div>
+  </div>
+  <div id="df" class="mn hide">
+    <div class="tp"><button id="db">← Kembali</button><span>Pilih tingkat kesulitan</span></div>
+    <button class="big l1" data-lv="1"><span class="ic">😴</span><span><b>Mudah</b><small>Bot main asal-asalan, gampang dikalahkan</small><small class="rc" id="rc1"></small></span><span class="lvs">★☆☆☆</span></button>
+    <button class="big l2" data-lv="2"><span class="ic">🙂</span><span><b>Sedang</b><small>Kadang menutup dan menyerang, masih sering salah</small><small class="rc" id="rc2"></small></span><span class="lvs">★★☆☆</span></button>
+    <button class="big l3" data-lv="3"><span class="ic">😤</span><span><b>Sulit</b><small>Selalu menutup dan menyerang, jarang salah</small><small class="rc" id="rc3"></small></span><span class="lvs">★★★☆</span></button>
+    <button class="big l4" data-lv="4"><span class="ic">👑</span><span><b>Mustahil</b><small>Sempurna 100%, tidak mungkin kalah</small><small class="rc" id="rc4"></small></span><span class="lvs">★★★★</span></button>
+  </div>
+  <div id="gm" class="hide">
+    <div class="tp"><button id="gb">← Menu</button><span id="mode"></span></div>
+    <div class="vs" id="vs"></div>
+    <div class="st" id="st">Giliran kamu</div>
+    <div class="grid" id="g"></div>
+    <div class="sb">
+      <div class="pl" id="pl1" style="--ac:var(--x)"><small id="l1">Kamu</small><b id="sx">0</b></div>
+      <div class="pl"><small>Seri</small><b id="sd" style="color:var(--tx)">0</b></div>
+      <div class="pl" id="pl2" style="--ac:var(--o)"><small id="l2">Bot</small><b id="so">0</b></div>
+    </div>
+    <div class="bt"><button id="rr">Ulang ronde</button><button id="rs" class="p">Reset skor</button></div>
+  </div>
+</div>
+<script src="tictactoe.js"></script>
+</body></html>
