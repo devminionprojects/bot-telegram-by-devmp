@@ -1,0 +1,101 @@
+<!-- bot_help_html() baris 7301-7401; literal -->
+
+💾 <b>NAS Pribadi</b> (foto, video, dokumen)
+<i>NAS tiap ID terpisah: kamu hanya melihat file milikmu sendiri</i>
+• Kirim file → otomatis tersimpan per tanggal
+• <code>21-09-2026</code> → ambil semua file hari itu
+• <code>cari foto panel 10-2026</code> → cari file (tambah <code>kirim</code> = langsung dikirim)
+• <code>nas</code> → ringkasan per tanggal
+• <code>nas 03-10-2026</code> → daftar bernomor
+• <code>nas 03-10-2026 1</code> → ambil 1 file saja (urutan ke-1), <code>nas 03-10-2026 foto 2</code> → foto ke-2
+• <code>hapus foto 03-10-2026 5</code> → hapus file di NAS-mu sendiri
+• <code>hapus 20-11-2026</code> → hapus SEMUA file di tanggal itu sekaligus (ada konfirmasi <code>ya</code>), <code>hapus foto 20-11-2026</code> → semua foto tanggal itu
+<i>Hapus pesan di Telegram tidak menghapus file di server</i>
+
+🤖 <b>AI Chat + Ingatan</b>
+• Chat biasa → tanya apa saja, AI ingat obrolan dan file yang kamu kirim
+• Kirim foto / video → dikomentari AI (tulis caption kalau mau bertanya)
+• Kirim dokumen (PDF, Word, Excel, PowerPoint, CSV, teks) → dibaca lengkap, tak perlu kamu buka sendiri
+• Contoh caption dokumen: <code>ringkas dokumen ini</code>
+• <code>lupakan</code> → hapus ingatan
+
+🔎 <b>Cari di Internet</b>
+• Tanya berita, harga, skor di chat biasa → AI cari lewat DuckDuckGo, lengkap dengan link dan tanggal
+• <code>web harga emas hari ini</code> → paksa cari
+• <code>carikan 20 berita bola hari ini</code> → minta jumlah tertentu
+• <code>cari lagi</code> atau <code>update</code> → minta data baru
+• Kirim foto + caption <code>carikan harga barang ini</code> → cari dari gambar
+
+🎬 <b>YouTube</b> 🆕 (awali dengan <code>yt</code>)
+🤖 <i>Ditulis AI (Bahasa Indonesia)</i>
+• <code>yt [link]</code> → ringkasan selengkap mungkin
+• <code>yt [link] ringkas</code> → padat, semua bagian tercakup
+• <code>yt [link] poin</code> → poin penting yang lengkap
+• <code>yt [link] lengkap</code> → isi detail, video panjang dikirim per bagian
+• <code>yt [link] apa kesimpulannya?</code> → tanya isi video
+📜 <i>Transkrip (ucapan video, bukan ringkasan)</i>
+• <code>ytraw [link]</code> atau <code>yt mentah [link]</code> → transkrip lengkap + file .txt, ada jamnya
+• Video Inggris/lain otomatis diterjemahkan AI ke Indonesia
+• <code>ytraw asli [link]</code> → bahasa asli, tanpa terjemahan
+• <code>ytraw id [link]</code> / <code>ytraw en [link]</code> → paksa subtitle bahasa itu dari YouTube
+<i>Catatan:</i>
+• Boleh pakai garis miring (/yt, /ytraw)
+• Ringkas/poin/lengkap dan transkrip tidak bisa digabung
+• Kata ringkas, poin, lengkap harus berdiri sendiri di samping link
+• Link tanpa yt tidak dibaca, hanya video publik
+• Mau mengunduh videonya (bukan ringkasan)? Pakai ytdl, lihat Download YouTube
+• Tanpa subtitle: yt dibaca AI langsung, ytraw tidak bisa
+
+📰 <b>Info Terjadwal</b>
+• <code>buatin info nanti jam 6.09 untuk berita hot</code>
+• <code>setiap hari jam 6.00 carikan 20 berita, poin-poin saja</code>
+• Pas jamnya bot cari di internet, lalu kirim hasil dengan sumber dan tanggal
+• <code>info terjadwal</code> → daftar, <code>batal info 1</code> → batalkan
+
+⏰ <b>Pengingat &amp; Timer</b>
+• <code>ingatkan aku 30 menit lagi minum obat</code>
+• <code>ingatkan ujian 13 Januari 2027 jam 9 pagi</code> (jadwal jauh dapat pengingat H-7 dan H-1)
+• Diulang tiap menit sampai dibalas: <code>spam ya</code> / <code>spam tidak</code> / <code>spam tanya</code>
+• <code>pengingat</code> → daftar, <code>batal pengingat 1</code> → batalkan
+
+📝 <b>Catatan Cepat</b>
+• <code>catat password wifi: abc123</code> → simpan
+• <code>catatan</code> → daftar, <code>catatan wifi</code> → cari, <code>hapus catatan 3</code> → hapus
+<i>Catatan ikut dikirim ke AI, jangan simpan yang terlalu rahasia</i>
+
+🗜️ <b>Kompres File</b> 🆕
+• Kirim file apa pun (video, foto, PDF, Word/Excel/PPT, audio) dengan caption <code>compres 60mb</code> → dikompres ke ukuran itu, NAS hanya menyimpan hasilnya
+<i>Satuan: kb, mb, gb. Contoh: compres 500kb, compres 1.5gb</i>
+
+🎬 <b>Download TikTok</b> 🆕
+• <code>tt https://vt.tiktok.com/xxxx</code> → unduh video / slideshow foto TikTok tanpa watermark
+• <code>tt mp3 link</code> → audionya saja. Kirim link TikTok langsung juga bisa
+
+📸 <b>Download Instagram</b> 🆕
+• <code>ig https://www.instagram.com/reel/xxxx</code> → unduh reel, video, foto, atau carousel Instagram (file asli, tanpa watermark)
+• <code>ig mp3 link</code> → audionya saja. Kirim link Instagram langsung juga bisa
+<i>Story, highlight, dan akun privat butuh cookie login (~/ig-cookies.txt)</i>
+
+📥 <b>Download YouTube</b> 🆕
+• <code>ytdl https://youtu.be/xxxx</code> → unduh video MP4 (bawaan 720p), dikirim lengkap dengan tabel info dan deskripsi seperti TikTok
+• <code>ytdl mp3 link</code> (atau <code>ytmp3 link</code>) → audionya saja dalam MP3
+• <code>ytdl 1080 link</code> → pilih kualitas: 144, 240, 360, 480, 720, 1080, 1440, 2160, atau <code>terbaik</code>
+• Semua jenis link bisa: video, Shorts, youtu.be, music.youtube.com, dan playlist (5 video pertama)
+<i>Boleh pakai /ytdl, /ytmp3, /ytmp4. Video dibatasi umur butuh cookie (~/yt-cookies.txt)</i>
+
+🎵 <b>Putar Lagu</b> 🆕
+• <code>play sadrah</code> → cari lagu di YouTube (diambil yang penontonnya terbanyak), dikirim video, info lagu, dan pemutar audio (tombol play/pause)
+<i>Boleh pakai /play, tanpa batas durasi dan ukuran file</i>
+
+🎧 <b>Cari Lagu (Spotify)</b> 🆕
+• <code>spotify merry christmas</code> → hasil daftar bertombol, ketuk nomor lagu untuk memutarnya
+• <code>spotify</code> saja → buka Mini App kartu Spotify
+• Di Mini App: tombol + di tiap lagu dan tab Playlist (lagu ganti otomatis pas habis)
+
+🎨 <b>Stiker Teks</b> 🆕
+• <code>stiker ABIS TU KETIK TEKS YANG KALIAN MAU</code> → pesanmu jadi stiker putih
+<i>Teks otomatis kapital, ukuran huruf menyesuaikan, maks 300 karakter</i>
+
+🎮 <b>Game Tic Tac Toe</b> 🆕
+• <code>ttt</code> → buka Mini App Tic Tac Toe, main lawan bot (4 tingkat: Mudah, Sedang, Sulit, Mustahil) atau lawan teman yang terdaftar di bot
+<i>Teman diundang dari dalam game dan dapat pesan dari bot. Ada tombol Ulang ronde dan Reset skor</i>

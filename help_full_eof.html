@@ -1,0 +1,188 @@
+<!-- bot_help_full_html() baris 7437-7623; literal -->
+✦ <b>Apa saja yang bisa aku lakukan?</b>
+   🆕 Fitur terbaru: perintah <code>ytdl</code> untuk mengunduh video atau MP3 dari link YouTube apa saja (lihat bagian Download YouTube di bawah), serta <code>yt</code> untuk meringkas video YouTube dan <code>ytraw</code> untuk transkrip lengkapnya (lihat bagian YouTube di bawah)
+
+📊 <b>Status Server Real-time</b>
+   ➤ RAM, baterai, suhu, WiFi, uptime, status tunnel &amp; lainnya (tombol Status, atau ketik status)
+
+💾 <b>Penyimpanan NAS Pribadi</b>
+   ➤ NAS tiap ID Telegram TERPISAH: tiap orang hanya melihat, mencari, mengambil, dan menghapus file di NAS-nya sendiri, dan tidak bisa melihat NAS ID lain
+   ➤ Kirim foto/video/dokumen, otomatis tersimpan per tanggal
+   ➤ Ketik tanggal (21-09-2026) buat ambil lagi SEMUA file hari itu, berapa pun jumlahnya, tidak dibatasi
+   ➤ Mengirim file dari NAS: pencarian dengan kata kirim juga mengirim SEMUA file yang cocok (tidak dibatasi 10 atau 20). Semua dikirim satu per satu dengan jeda 1 detik supaya Telegram tidak menolak, dan di akhir ada laporan berapa file terkirim dan mana yang gagal beserta alasannya. File yang gagal tetap aman di NAS
+   ➤ Ukuran file TIDAK dibatasi oleh bot: bot ini memakai server Bot API Telegram lokal, jadi file berukuran besar (sampai 2 GB per file) bisa dikirim ke bot dan diambil lagi dari NAS dalam format yang sama: foto tetap foto, video tetap video, dokumen tetap dokumen. Hanya kalau Telegram sendiri menolak sebuah foto atau video, file itu dikirim sebagai dokumen supaya tidak hilang, dan bot memberi tahu
+   ➤ Cari file: ketik <code>cari foto panel</code> (bisa tambah bulan 10-2026 atau kata kirim), atau minta lewat chat, misal: carikan semua foto panel bulan ini
+   ➤ Ketik <code>nas</code> buat lihat semua tanggal + jumlah foto, video, file lain per tanggal
+   ➤ Ketik <code>nas 03-10-2026</code> buat lihat daftar bernomor, lalu <code>hapus foto 03-10-2026 5</code> buat menghapus (jenis: foto, video, file; hanya file di NAS-mu sendiri)
+   ➤ Hapus file NAS juga bisa lewat chat biasa, misal: hapus foto tanggal 3 oktober yang ke 5 (file di server beneran terhapus, ruang penyimpanan jadi lega)
+   ➤ Hapus SEMUA file satu tanggal sekaligus: ketik <code>hapus 20-11-2026</code> (semua foto, video, dan file lain di tanggal itu pada NAS-mu sendiri), atau <code>hapus foto 20-11-2026</code> buat semua foto saja (jenis: foto, video, file). Bot menampilkan ringkasan dulu, lalu menghapus PERMANEN setelah kamu mengetik ya (batal: ketik batal, hangus otomatis dalam 2 menit). Bisa juga lewat chat biasa, misal: hapus semua file NAS tanggal 20 november 2026
+   ➤ Menghapus pesan di chat Telegram TIDAK menghapus file di server, pakai perintah hapus di atas
+
+🖼 <b>AI Komentar File</b>
+   ➤ Foto dan video yang kamu kirim langsung dikomentari AI
+   ➤ Tulis caption atau pertanyaan saat kirim file, AI jawab captionmu dulu
+   ➤ 📄 Dokumen kiriman (PDF, Word docx/doc, Excel xlsx/xls, PowerPoint pptx/ppt, OpenDocument odt/ods/odp, RTF, CSV/TSV, teks biasa, dan file teks lain seperti json, log, atau kode) DIBACA ISINYA SECARA LENGKAP oleh bot (semua halaman, lembar, slide, baris, dan kolom; batas baca sangat besar, DOC_READ_CHARS=1000000 karakter), lalu isinya diberikan ke AI. Jadi pengguna TIDAK perlu membuka dokumennya sendiri: cukup kirim file dengan caption, misalnya: ringkas dokumen ini, apa poin pentingnya, cari nama Budi di file ini, berapa total kolom jumlah, atau tolong rangkum per bab. AI menjawab caption itu langsung berdasarkan isi file, menyebut nama, nomor, tanggal, dan angka apa adanya, dan kalau datanya tidak ada di file AI jujur bilang tidak ada, tidak menebak dan tidak mengarang. Kalau tidak ada caption, AI memberi ringkasan dan komentar atas isinya
+   ➤ Dokumen kiriman tidak dicari di internet, kecuali caption jelas menyebut internet, web, atau google. Ringkasan isinya ikut disimpan di catatan ingatan dan indeks pencarian NAS, jadi pertanyaan lanjutan tentang dokumen itu lewat chat biasa bisa dijawab dari ringkasan tersebut; kalau butuh detail yang tidak ada di ringkasan, sarankan mengirim ulang file itu atau meminta bot mengirim file lamanya lalu bertanya dengan caption
+   ➤ PDF hasil scan (halaman berupa gambar) juga dibaca: halaman scan dibaca AI lewat OCR lalu digabung ke isi dokumen, tapi prosesnya lebih lama. Yang tidak bisa dibaca isinya: file terkunci atau berpassword, serta arsip, audio, dan video. Kalau begitu, jujur bilang tidak terbaca dan jangan berpura-pura sudah membaca isinya
+   ➤ Kalau ada yang teledor atau janggal, AI kasih kritik dan saran
+
+🤖 <b>AI Chat Pintar + Ingatan</b>
+   ➤ Tanya apa saja, dijawab asisten AI yang santai dan humoris (jawaban bebas panjang atau pendek, menyesuaikan topik)
+   ➤ 🔎 Bisa cari info terkini di internet lewat DuckDuckGo (berita, harga, skor pertandingan, dan sebagainya): tanya saja lewat chat biasa, AI otomatis mencari lalu menyebut sumbernya
+   ➤ 🧠 Sebelum mencari, AI memeriksa dulu seluruh riwayat chat. Kalau jawabannya sudah ada di jawaban sebelumnya, AI memakainya tanpa mencari lagi. Untuk info yang cepat berubah (klasemen, skor yang sedang berjalan, harga, kurs, cuaca, berita terkini, status jadwal), riwayat hanya dipakai kalau berasal dari hari ini, kalau tidak, dicari lagi. Tulis <code>cari lagi</code>, <code>update</code>, atau <code>cek ulang</code> untuk memaksa mencari data baru. Kata kunci pencarian lanjutan memakai nama, lawan, atau tanggal dari riwayat
+   ➤ Mau memaksa AI mencari? Ketik <code>web kata kunci</code>, misal: <code>web harga emas hari ini</code>
+   ➤ Jawaban diambil dari hasil pencarian teratas: sumber resmi (misalnya AFC, PSSI, situs pemerintah) didahulukan, lalu sumber terpercaya (kampus, media besar, Wikipedia), dan semuanya ditandai. Bot membuka dan membaca isi halaman sumber dari atas sampai bawah (bukan cuma cuplikan; isinya hanya jadi bahan AI di balik layar dan tidak dikirim ke Telegram), mengecek tanggal terbit, penulis, HTTPS, dan kecocokan isi dengan pertanyaan, lalu membandingkan antar sumber. Fakta hanya disebut pasti kalau minimal 2 situs berbeda sepakat, kalau tidak, AI bilang belum terkonfirmasi. Halaman yang diblokir atau butuh login dilewati, dan link serta tanggal sumber selalu disertakan
+   ➤ 🎯 Minta jumlah tertentu? Tulis saja angkanya, misal: <code>carikan 20 berita bola hari ini</code>. Jumlah halaman yang dibaca TIDAK dibatasi: bot membaca halaman sumber satu per satu sampai terkumpul 20, dan kalau masih kurang, otomatis lanjut membuka halaman hasil DuckDuckGo berikutnya (lalu mencoba variasi kata kunci) sampai terpenuhi atau memang sudah tidak ada hasil baru. Kalau tetap kurang, bot jujur bilang baru dapat berapa. Tanpa angka, bot membaca beberapa halaman teratas saja. Makin besar angkanya, makin lama prosesnya; progresnya dilaporkan di chat
+   ➤ 🛒 Tanya harga barang fisik (misal: harga mouse logitech m331): selain jawaban dari web, bot menyertakan link pencarian Tokopedia dan Shopee untuk cek harga terbaru
+   ➤ 📎 Kirim foto, video, PDF, atau dokumen dengan caption berisi pertanyaan atau kata cari/carikan (misalnya: carikan harga barang ini), bot mencari di web memakai kata kunci dari caption dan isi file, dengan aturan sumber yang sama seperti di atas. Khusus foto barang: bot membandingkan fotomu dengan gambar di halaman hasil pencarian (dari situs apa pun, bukan cuma toko online). Harga hanya disebut kalau barangnya SAMA; kalau cuma MIRIP, jawabannya ditandai produk mirip beserta kisaran harga; kalau tidak ada yang cocok, bot jujur bilang belum ketemu dan minta foto label, merek, kotak kemasan, atau barcode
+   ➤ AI ingat semua obrolan, kiriman file (nama, tanggal tersimpan, isinya), dan hasil tombol
+   ➤ Minta file lama lewat chat, misal: kirim lagi foto panel yang kemarin
+   ➤ Ketik <code>lupakan</code> (atau <code>reset ai</code>) buat menghapus ingatan, mulai dari nol lagi
+
+🎬 <b>Baca &amp; Ringkas Video YouTube (fitur terbaru)</b>
+   ➤ 🆕 Ini fitur paling baru bot ini, semuanya lewat perintah <code>yt</code>. Berlaku untuk semua pengguna yang diizinkan memakai bot. Link YouTube yang dikirim tanpa kata <code>yt</code> atau <code>ytraw</code> di depannya TIDAK dibaca isinya (dan tidak diunduh otomatis; mengunduh video / MP3 lewat <code>ytdl</code>, lihat bagian Download YouTube). Ada dua kelompok: MODE AI (hasil ditulis AI) dan MODE TRANSKRIP (isi ucapan video). Berikut SEMUA perintahnya beserta fungsinya, jelaskan dengan rinci ke pengguna kalau ditanya:
+   ➤ <code>yt https://youtu.be/xxxx</code> (juga <code>/yt</code>) → FUNGSI: ringkasan video selengkap mungkin, urut per bagian, dengan poin penting, angka, dan nama yang disebut. Ini bawaan kalau tidak ada tambahan kata
+   ➤ <code>yt https://youtu.be/xxxx ringkas</code> (juga <code>ringkas lengkap</code>, <code>ringkas dan lengkap</code>) → FUNGSI: ringkasan PADAT tapi setiap bagian video tercakup, tiap bagian 1 sampai 3 kalimat, angka, nama, dan kesimpulan penting tetap disebut. Paling singkat di antara mode AI
+   ➤ <code>yt https://youtu.be/xxxx poin</code> (juga <code>poin-poin</code>, <code>poin lengkap</code>, <code>poin penting</code>, <code>poin-poin penting lengkap</code>) → FUNGSI: menampilkan SEMUA poin penting video dalam daftar poin (diawali tanda strip) berurutan dari awal sampai akhir dengan sub-judul per topik; satu poin satu hal penting (fakta, angka, harga, nama, merek, spesifikasi, langkah, peringatan, saran, kesimpulan). Video panjang dibaca per bagian supaya tidak ada poin terlewat
+   ➤ <code>yt https://youtu.be/xxxx lengkap</code> (juga <code>detail</code>, <code>detail lengkap</code>, <code>lengkap dan detail</code>) → FUNGSI: isi video dijabarkan SELENGKAP dan SEDETAIL mungkin, urut dari awal sampai akhir, tanpa dipadatkan (paling panjang di antara mode AI). Video panjang (transkrip lebih dari YT_DETAIL_CHUNK=24000 karakter) dibaca per bagian lalu dikirim berurutan sebagai Bagian 1 dari N dan seterusnya
+   ➤ <code>yt https://youtu.be/xxxx apa kesimpulannya?</code> (pertanyaan atau kalimat apa saja setelah link) → FUNGSI: menjawab pertanyaan pengguna HANYA berdasarkan isi video itu. Kalimat bebas seperti ini dianggap pertanyaan biasa, bukan mode ringkas/poin/lengkap, dan tidak dibagi per bagian
+   ➤ <code>ytraw https://youtu.be/xxxx</code> (juga <code>yt mentah https://youtu.be/xxxx</code>, <code>yt raw</code>, <code>/ytraw</code>, <code>/ytmentah</code>, <code>yt https://youtu.be/xxxx mentah</code>) → FUNGSI: mengirim SELURUH transkrip ucapan video (bukan ringkasan) ke Telegram sebagai pesan chat dan file .txt utuh, tiap baris diawali jam [mm:ss]. Kalau subtitle video bukan Indonesia (misal Inggris), otomatis diterjemahkan ke Indonesia oleh AI per baris tanpa diringkas
+   ➤ <code>ytraw asli https://youtu.be/xxxx</code> → FUNGSI: transkrip dalam bahasa ASLI video, tanpa terjemahan AI
+   ➤ <code>ytraw id https://youtu.be/xxxx</code> atau <code>ytraw en https://youtu.be/xxxx</code> (kode bahasa dua huruf lain juga bisa) → FUNGSI: memaksa memakai subtitle bahasa itu yang disediakan YouTube, tanpa AI bot. Untuk video berbahasa Inggris, <code>id</code> berarti terjemahan mesin YouTube yang mutunya pas-pasan (header memberi catatan); kalau trek bahasa itu tidak ada, bot bilang tidak tersedia
+   ➤ Aturan penulisan: kata <code>ringkas</code>, <code>poin</code>, <code>lengkap</code>, <code>detail</code>, <code>mentah</code> harus berdiri sendiri di samping link (sebelum atau sesudah). Kalau ditulis di dalam kalimat, misal <code>poin tentang baterai</code>, dianggap pertanyaan biasa untuk AI. Mode ringkas/poin/lengkap dan mode transkrip TIDAK bisa digabung dalam satu perintah; kalau pengguna mau dua-duanya, sarankan dua perintah terpisah. Kalau pengguna minta transkrip, teks persis, atau mentah, arahkan ke <code>ytraw link</code>; kalau minta ringkasan, poin, atau jawaban, arahkan ke <code>yt link</code> sesuai tingkat yang dia mau. Mode AI tetap tulisan AI, bukan salinan kata per kata
+   ➤ CARA KERJA MODE AI (semua perintah <code>yt link ...</code> di atas): bot mengambil judul, kanal, tanggal unggah, durasi, deskripsi, daftar bab, dan transkrip ucapan dari subtitle memakai yt-dlp (subtitle buatan pemilik video didahulukan, kalau tidak ada dipakai subtitle otomatis, bahasa Indonesia atau Inggris). Semua data itu dikirim ke AI, dan AI menjawab HANYA berdasarkan data itu, tanpa mengarang, dalam Bahasa Indonesia. Jawabannya masuk ke ingatan chat
+   ➤ Panjang transkrip TIDAK dibatasi bot (YT_MAX_CHARS=0), jadi video panjang pun dibaca utuh. Yang tetap menjadi batas hanya kapasitas dan kuota Gemini: kalau video terlalu panjang sampai ditolak Gemini, bot bilang gagal
+   ➤ Kalau video tidak punya subtitle sama sekali, <code>yt link</code> otomatis mencoba cadangan: Gemini membaca videonya langsung (suara dan gambar), hanya untuk video publik. Mode mentah TIDAK punya cadangan ini: bot bilang terus terang tidak ada transkrip, dan tidak boleh mengarang transkrip
+   ➤ MODE MENTAH (<code>ytraw link</code>): bot mengirim SELURUH transkrip subtitle ke Telegram, bukan ringkasan, dalam dua bentuk: pesan chat (dipecah per baris, maks 3500 karakter per pesan, tiap pesan dicek terkirim dan diulang kalau Telegram menolak) dan file .txt utuh sebagai cadangan. Tiap baris diawali jam [mm:ss] (diatur YT_RAW_TIMESTAMP) dan ada header berisi judul, kanal, tanggal, durasi, link, dan jenis subtitle. Hasil mode mentah TIDAK masuk ke ingatan chat
+   ➤ Bahasa di mode mentah: bahasa subtitle dipilih mengikuti bahasa ucapan video. Kalau subtitle sudah Indonesia, dikirim apa adanya tanpa AI sama sekali. Kalau BUKAN Indonesia (misal Inggris), bot otomatis menerjemahkan seluruh transkrip ke Bahasa Indonesia lewat AI (Gemini), baris demi baris tanpa meringkas atau mengurangi, jam tetap dari subtitle asli, dan header menyebut bahwa itu terjemahan AI; jadi dalam kasus ini hasilnya bukan 100% mentah lagi, jelaskan itu kalau ditanya. Baris yang gagal diterjemahkan dikirim dalam bahasa aslinya dan jumlahnya dilaporkan. Kalau terjemahan gagal total, transkrip dikirim dalam bahasa asli
+   ➤ Pilihan lain untuk bahasa: <code>ytraw asli link</code> = bahasa asli video, tanpa terjemahan AI. <code>ytraw id link</code> = subtitle Indonesia yang disediakan YouTube, tanpa AI bot; kalau videonya berbahasa Inggris itu terjemahan mesin YouTube yang mutunya pas-pasan (header memberi catatan), dan kalau trek itu tidak ada bot bilang tidak tersedia. Mode ini juga bisa dimatikan terjemah otomatisnya lewat pengaturan YT_RAW_TERJEMAH=0
+   ➤ Mode mentah dan ringkas TIDAK bisa digabung: mentah tidak lewat AI untuk meringkas. Kalau pengguna mau dua-duanya, sarankan mengirim dua perintah terpisah (<code>yt mentah link</code> lalu <code>yt link</code>). Kalau pengguna minta transkrip lengkap, mentah, atau teks persis ucapan, arahkan ke <code>ytraw link</code>; kalau minta ringkasan, kesimpulan, atau jawaban, arahkan ke <code>yt link</code>
+   ➤ Video panjang di mode mentah bisa menjadi puluhan pesan (kira-kira video 1 jam belasan sampai dua puluhan pesan), dikirim satu per detik. Kalau pengguna tidak mau chat penuh, ada pengaturan YT_RAW_KIRIM_PESAN=0 supaya hanya file .txt yang dikirim
+   ➤ Kalau video privat, dibatasi umur, khusus member, atau YouTube meminta login, bot bisa gagal. Di Termux ada file cookie opsional (yt-cookies.txt) untuk membantu, tapi cookie itu bisa kedaluwarsa. Jangan pernah minta atau menyebut isi cookie, token, atau API key
+   ➤ PENTING soal ingatan: yang tersimpan di riwayat chat hanya perintahmu dan JAWABAN ringkasan AI dari mode ringkas, bukan transkrip lengkapnya. Jadi pertanyaan lanjutan lewat chat biasa hanya bisa dijawab dari ringkasan itu. Kalau pengguna butuh detail yang tidak ada di ringkasan (misalnya menit tertentu atau kutipan), sarankan mengetik ulang <code>yt linknya pertanyaannya</code> supaya bot mengambil transkrip lagi, atau memakai <code>ytraw linknya</code> untuk teks lengkapnya
+   ➤ PENTING soal link: AI tidak bisa membuka atau menonton link YouTube sendiri lewat chat biasa, dan pencarian web sengaja melewati youtube.com. Kalau pengguna mengirim link YouTube tanpa kata <code>yt</code> atau <code>ytraw</code> di depannya, jangan berpura-pura sudah menonton atau membaca videonya, tapi arahkan dengan ramah untuk mengetik <code>yt linknya</code> (ringkas), <code>ytraw linknya</code> (transkrip lengkap), atau <code>ytdl linknya</code> kalau dia mau mengunduh videonya (<code>ytdl mp3 linknya</code> untuk MP3)
+   ➤ Selama bot memproses video (bisa puluhan detik sampai beberapa menit untuk video panjang) bot sibuk dan belum membalas pesan lain. Jawaban panjang otomatis dipecah jadi beberapa pesan karena batas Telegram 4096 karakter per pesan
+
+📰 <b>Info Terjadwal (Dicari di Internet)</b>
+   ➤ Minta lewat chat biasa, misal: <code>buatin info nanti jam 6.09 untuk berita hot</code>. Kalau topik atau jamnya belum jelas, AI menanyakan dulu mau info atau note apa untuk jam berapa
+   ➤ Pas jamnya tiba, bot MENCARI di internet (DuckDuckGo) memakai tanggal dan jam saat itu, jadi hasilnya info terbaru hari itu, lalu dikirim ke Telegram lengkap dengan sumber dan tanggal terbit. Berlaku untuk topik apa saja: berita, harga, cuaca, skor, dan lainnya
+   ➤ Info terjadwal SELALU dicari baru pada tanggal dan jam jadwal itu berjalan, tidak diambil dari riwayat chat. Topik pencarian ditulis AI lengkap dan spesifik (nama, tempat, aspek yang diminta). Jawabannya masuk ke riwayat chat, jadi bisa ditanyakan lanjutannya
+   ➤ Untuk topik pertandingan olahraga, bot menulis tanggal dan jam kick-off (WIB), menandai tiap pertandingan SUDAH SELESAI, SEDANG BERLANGSUNG, atau BELUM DIMAINKAN dengan membandingkan jam kick-off dengan waktu saat jadwal berjalan, lalu menyebut pertandingan terakhir, pertandingan berikutnya, dan tanggal pembaruan klasemen. Kalau hasil pertandingan hari itu belum terbit di sumber, bot bilang terus terang
+   ➤ Mau diulang tiap hari? Bilang saja, misal: setiap hari jam 6.09 kirim berita hot. Jadwal harian jalan terus sampai kamu batalkan
+   ➤ Bisa sekalian minta bentuk jawabannya, misal: setiap hari jam 6.00 carikan 20 berita update, poin-poin saja, singkat. Permintaan itu diingat dan dipakai tiap jadwal jalan. Angka seperti 20 berita ikut dikejar: bot membaca halaman sampai 20 item terkumpul (lanjut ke halaman hasil berikutnya kalau kurang). Kalau tidak minta apa-apa soal format, jawabannya tetap lengkap seperti chat biasa
+   ➤ Kalau hasil pertama kurang, AI mencari lagi dengan kata kunci lain, tanpa batas jumlah pencarian (sama seperti chat biasa), dan setiap pencarian lanjutan tetap dipaksa memakai tanggal saat jadwal itu jalan. Berhenti sendiri kalau sudah cukup, kata kuncinya sama, atau pencarian gagal 2 kali berturut-turut
+   ➤ Kalau pencarian gagal, bot bilang gagal dan tidak menjawab dari ingatan AI
+   ➤ Ketik <code>info terjadwal</code> buat lihat daftar, <code>batal info 1</code> buat membatalkan
+
+⏰ <b>Pengingat &amp; Timer</b>
+   ➤ Chat biasa aja, misal: ingatkan aku 30 menit lagi minum obat
+   ➤ Bisa juga jadwal jauh, misal: ingatkan ujian 13 Januari 2027 jam 9 pagi
+   ➤ Jadwal jauh otomatis dapat pengingat awal H-7 dan H-1
+   ➤ Pilih pakai spam (diulang tiap menit sampai dibalas) atau sekali saja: AI akan menanyakan, atau langsung bilang tanpa spam
+   ➤ Atur kebiasaan: ketik <code>spam ya</code> (selalu spam), <code>spam tidak</code> (tanpa spam), <code>spam tanya</code> (tanya dulu), atau <code>spam</code> buat melihat pilihanmu
+   ➤ Notifikasi dikirim lewat Telegram pas waktunya (kalau bot sempat mati, tetap terkirim dengan keterangan telat)
+   ➤ Kalau tidak dibalas, pengingat diulang tiap 1 menit terus sampai kamu membalas pesan apa saja atau menekan tombol OK, dan AI ikut menagih dengan komentar santai
+   ➤ Ketik <code>pengingat</code> buat lihat daftar, ketik <code>batal pengingat 1</code> buat membatalkan
+   ➤ Ketik <code>backup</code> (khusus pemilik) buat dikirimi file cadangan pengingat
+
+📝 <b>Catatan Cepat</b>
+   ➤ Ketik <code>catat password wifi ruang server: abc123</code> (atau minta lewat chat: tolong catat ...)
+   ➤ Ketik <code>catatan</code> buat lihat daftar, <code>catatan wifi</code> buat mencari, <code>hapus catatan 3</code> buat menghapus
+   ➤ AI bisa menjawab dari catatanmu. Catatan ikut dikirim ke Gemini tiap kamu chat, jadi jangan simpan yang terlalu rahasia
+
+🗜️ <b>Kompres File</b> 🆕
+   ➤ Kirim file dengan caption <code>compres 60mb</code> (juga <code>kompres</code>, satuan kb/mb/gb, tanpa satuan = mb). Video diturunkan bitrate dan resolusinya sesuai target, foto dikecilkan kualitas dan dimensinya, PDF lewat ghostscript, Word/Excel/PPT dikecilkan gambar di dalamnya, audio jadi mp3 berbitrate pas. Jenis lain dibungkus .zip kalau memang bisa mengecil
+   ➤ NAS hanya menyimpan hasil kompres, file asli dibuang. Kalau sudah di bawah target, file disimpan apa adanya. Kalau tidak bisa sampai target, hasil terkecil yang disimpan dan bot memberi tahu
+   ➤ Butuh: <code>pkg install ffmpeg ghostscript python-pillow</code>
+
+🎬 <b>Download TikTok</b> 🆕
+   ➤ Ketik <code>tt link_tiktok</code> (juga <code>/tt</code> atau <code>tiktok link</code>), atau kirim link TikTok saja: bot mengunduh video tanpa watermark (HD kalau ada), atau semua foto kalau berupa slideshow (dikirim per 10 foto) lengkap dengan musiknya
+   ➤ Audio saja: <code>tt mp3 link_tiktok</code>. Sumber utama API tikwm.com, cadangan yt-dlp. Link pendek vt/vm.tiktok.com didukung
+
+📸 <b>Download Instagram</b> 🆕
+   ➤ Ketik <code>ig link_instagram</code> (juga <code>/ig</code> atau <code>instagram link</code>), atau kirim link Instagram saja: bot mengunduh post, reel, IGTV, foto, atau carousel (semua item, dikirim per 10) lengkap dengan tabel info dan deskripsi
+   ➤ File diambil dari aslinya sehingga tanpa watermark. Audio saja: <code>ig mp3 link_instagram</code>
+   ➤ Sumber utama yt-dlp, cadangan halaman embed (post publik). Story, highlight, dan akun privat butuh cookie login di <code>~/ig-cookies.txt</code>. Instagram sering membatasi bot, jadi kalau gagal coba <code>pip install -U yt-dlp</code>
+
+📥 <b>Download YouTube</b> 🆕
+   ➤ Ketik <code>ytdl link_youtube</code> (juga <code>/ytdl</code>, <code>ytmp4 link</code>, <code>yt dl link</code>, <code>yt download link</code>, <code>yt unduh link</code>): bot mengunduh VIDEO dari link YouTube apa saja (video biasa, Shorts, youtu.be, music.youtube.com, embed, live yang sudah selesai) sebagai MP4 H.264 + AAC supaya langsung bisa diputar di Telegram. Kualitas bawaan 720p (YTDL_HEIGHT), bisa dipilih lewat angka di perintah: <code>ytdl 1080 link</code> (144, 240, 360, 480, 720, 1080, 1440, 2160, 4k, atau terbaik)
+   ➤ Audio saja: <code>ytdl mp3 link</code>, <code>ytmp3 link</code>, atau <code>yt mp3 link</code> → MP3 kualitas terbaik (YTDL_MP3_QUALITY) dikirim bersama cover, tabel info, dan pemutar audio
+   ➤ Tampilan hasil sama seperti TikTok dan Instagram: video (atau cover + pemutar audio untuk MP3) + tabel Informasi YouTube (judul, channel, tipe dan kualitas, durasi, views, suka, komentar, upload, ukuran file) + deskripsi video yang bisa dibuka + keterangan "Diminta oleh ... via @bot", semuanya dalam SATU pesan. Kalau Telegram menolak pesan gabungan itu, bot mengirim file dulu lalu tabel infonya terpisah
+   ➤ Link playlist: bot mengunduh sejumlah video pertama (bawaan 5, YTDL_PLAYLIST_MAX) satu per satu, tiap video jadi satu pesan hasil. Link kanal (@nama, /channel/) tidak didukung, minta pengguna kirim link videonya. Siaran langsung atau premiere yang belum selesai tidak bisa diunduh sampai selesai
+   ➤ Perbedaan dengan perintah lain: <code>yt</code> = ringkasan AI, <code>ytraw</code> = transkrip, <code>ytdl</code> = mengunduh FILE video / MP3. Kalau pengguna minta download atau unduh video / lagu YouTube, arahkan ke <code>ytdl</code> (atau <code>ytdl mp3</code>). Link YouTube yang dikirim sendirian tanpa perintah tidak diunduh otomatis
+   ➤ Memakai yt-dlp, dan ffmpeg untuk menggabung video dengan suara serta membuat MP3 (<code>pkg install ffmpeg</code>). Tanpa ffmpeg hanya format yang sudah menyatu yang bisa diunduh (kualitas lebih rendah) dan audio dikirim sebagai m4a. Video dibatasi umur atau YouTube mengira server ini bot butuh cookie di <code>~/yt-cookies.txt</code> (sama dengan fitur <code>yt</code>). Kalau gagal terus: <code>pip install -U yt-dlp</code>. Batas durasi dan ukuran file bisa diatur lewat YTDL_MAX_SECS dan YTDL_MAX_MB (bawaan tanpa batas)
+
+🎵 <b>Putar Lagu</b> 🆕
+   ➤ Ketik <code>play judul lagu</code> (juga <code>/play</code>): bot mencari 10 hasil teratas di YouTube lalu memilih yang penontonnya terbanyak, mengirim thumbnail, tabel Informasi Lagu (channel, views, durasi, upload), lalu file audio mp3
+   ➤ Tanpa batas durasi dan ukuran file. Contoh: <code>play sadrah</code>
+
+🎧 <b>Cari Lagu (Spotify)</b> 🆕
+   ➤ Ketik <code>spotify judul lagu</code>: hasil tampil sebagai daftar bertombol (halaman ◀️ ▶️), ketuk nomor lagu untuk memutarnya lewat fitur play
+   ➤ Ketik <code>spotify</code> saja untuk membuka Mini App bergaya kartu Spotify (kalau sudah diaktifkan pemilik)
+   ➤ <b>Playlist di Mini App</b>: tiap lagu di tab Cari dan Ruang Global punya tombol + di kanannya (berubah jadi ✓ kalau sudah masuk). Ada tab <b>Playlist</b> berisi daftar lagu (ketuk lagu buat memutar dari situ, tombol ✕ buat menghapus), tombol Putar urut, Putar acak, Ulang, dan Kosongkan. Di Mini App lagu berganti OTOMATIS tepat saat lagu habis (pemutarnya ada di dalam Mini App), ada tombol ⏮ ⏭ di pemutar, dan lagu berikutnya disiapkan lebih dulu supaya tidak ada jeda.
+
+🎨 <b>Stiker Teks</b> 🆕
+   ➤ Ketik <code>stiker ABIS TU KETIK TEKS YANG KALIAN MAU</code> (juga <code>/stiker</code>, <code>sticker</code>): pesanmu dijadikan stiker Telegram berlatar putih berpojok bulat dengan teks hitam tebal huruf kapital. Ukuran huruf dipilih otomatis sesuai panjang teks (maks 300 karakter), dan baris dirapikan rata kiri-kanan kecuali baris terakhir. Stiker dikirim ke chat yang meminta dan tidak disimpan di NAS. Butuh Pillow di Termux (pkg install python-pillow)
+
+🎮 <b>Game Tic Tac Toe</b> 🆕
+   ➤ Ketik <code>ttt</code> (juga <code>/ttt</code>, <code>tictactoe</code>, <code>xo</code>): muncul tombol yang membuka Mini App papan 3x3 bergaya gelap, kamu X hijau lawan bot O biru, atau pilih <b>Main dengan Teman</b> untuk mengajak pengguna lain yang terdaftar di bot (mereka dapat pesan undangan dan permainan jalan bergantian secara langsung). Ada tombol <b>Ulang ronde</b> (skor tetap) dan <b>Reset skor</b>. Butuh Mini App aktif (SPOTIFY_WEBAPP_URL terisi)
+
+☀️ <b>Laporan Harian Otomatis</b>
+   ➤ Tiap pagi jam 07:00 dikirim ringkasan status server, pengingat hari ini, dan file masuk kemarin
+   ➤ Ketik <code>laporan</code> buat minta sekarang, <code>laporan on / laporan off</code> buat menyalakan atau mematikan
+   ➤ Pemilik bisa ganti jam: ketik <code>laporan jam 06:30</code>, dan ketik <code>waktu</code> buat cek jam server serta status laporan hari ini
+
+🛡 <b>Peringatan Otomatis</b>
+   ➤ Pemilik dikabari kalau Cloudflare tunnel atau SSH mati, baterai HP server rendah, atau penyimpanan hampir penuh (dan kabar lagi kalau sudah pulih)
+   ➤ Ketik <code>monitor</code> buat cek sekarang, <code>monitor off / monitor on</code> (pemilik) buat mematikan atau menyalakan
+
+🔄 <b>Update Script Bot (khusus pemilik)</b>
+   ➤ Kirim file script terbaru (.sh) dengan caption <code>update script</code>: bot memeriksa file (sintaks, token, ID pemilik), membuat cadangan, mengganti script, memberi izin eksekusi, lalu restart sendiri, dan tiap tahap kujelaskan
+   ➤ Script baru melapor kalau sudah aktif. Kalau tidak melapor dalam 2 menit, script lama dikembalikan otomatis dari cadangan (5 cadangan terakhir ada di folder telegram-control-backup)
+   ➤ File yang sintaksnya salah atau tidak memuat fitur update ini ditolak, dan script lama tidak disentuh
+
+🖥️ <b>Kendali Termux dari Telegram (khusus pemilik)</b>
+   ➤ Ketik <code>/termux</code> diikuti permintaan biasa, misal: <code>/termux cek sisa penyimpanan</code>. AI menyusun perintah shell-nya, bot menampilkannya, dan baru dijalankan setelah kamu balas <code>ya</code> (batal: <code>batal</code>)
+   ➤ Sudah tahu perintahnya? Ketik <code>/cmd df -h</code>, dipakai persis seperti ditulis, tetap perlu <code>ya</code>
+   ➤ Hasil dikirim kembali (token dan API key disamarkan) dan AI menjelaskannya. Perintah yang kena batas waktu 2 menit dihentikan. Daftar larangan perintah berbahaya (hapus massal, format, matikan bot, dan sejenisnya) sedang DIMATIKAN (TERMUX_SAFETY=0), jadi baca perintahnya baik-baik sebelum membalas ya
+   ➤ Perintah yang pernah dijalankan dicatat di berkas .telegram_termux_log
+
+📷 <b>Foto Kamera HP Server (khusus pemilik)</b>
+   ➤ Ketik <code>foto</code> atau <code>foto depan</code> buat kamera depan, <code>foto belakang</code> buat kamera belakang (perlu Termux:API dan izin kamera)
+   ➤ Foto dikirim ke chat tanpa batas ukuran dari bot (tetap sebagai foto, kalau ditolak Telegram dikirim sebagai dokumen). Foto TIDAK disimpan di HP maupun NAS
+   ➤ Pesan foto terhapus otomatis dari chat setelah 60 detik (diatur FOTO_HAPUS_DETIK). Kamera menjepret langsung setelah pesan pemberitahuan, tanpa hitung mundur
+   ➤ Ini perintah yang diketik orangnya, bukan sesuatu yang bisa dilakukan AI lewat chat biasa
+
+🗄️ <b>NAS Semua ID (kode rahasia, khusus pemilik)</b>
+   ➤ Ketik <code>nas all id</code> buat lihat ringkasan NAS semua ID yang terdaftar saja (ID yang tidak terdaftar tidak ditampilkan; nama akun tampil di samping ID, jumlah file per ID dan per tanggal; ID yang belum punya file tampil tanpa isi), <code>nas all id 03-10-2026</code> buat daftar file tanggal itu di semua ID. Juga <code>nas id 123456789 11-10-2026</code> buat mengirim langsung semua file milik satu ID di satu tanggal ke pengetiknya (bukan daftar teks), dan <code>nas id 123456789</code> buat ringkasan NAS ID itu. Kode ini rahasia: bisa dipakai ID terdaftar mana pun yang mengetiknya, tapi hanya pemilik yang melihatnya di menu, dan tidak boleh disebut atau diajarkan ke pengguna lain
+   ➤ Pemilik juga bisa MENGHAPUS PERMANEN NAS ID lain: <code>hapus nas id 123456789 20-11-2026</code> menghapus SEMUA file ID itu di tanggal tersebut, <code>hapus nas id 123456789 foto 20-11-2026 5 6</code> menghapus file tertentu (nomor dihitung per jenis di tanggal itu, lihat nomornya dulu lewat <code>nas id 123456789 20-11-2026</code> atau daftar tanggal di <code>nas all id 20-11-2026</code>), dan <code>hapus nas id 123456789 semua</code> mengosongkan seluruh NAS ID itu (semua tanggal). Selalu ada ringkasan dan konfirmasi ya dulu (batal: batal, hangus dalam 2 menit), dan file yang terhapus tidak bisa dikembalikan. Orangnya tidak diberi tahu otomatis. Perintah ini HANYA bisa dipakai pemilik, kalau pengguna biasa mencobanya bot menolak. Kalau pengguna biasa menanyakannya, jawab bahwa itu fitur khusus pemilik
+
+👥 <b>Penambahan ID Pengguna</b>
+   ➤ Khusus pemilik bot, jumlah pengguna tambahan tanpa batas
+   ➤ Cara tambah: ketik <code>id 123456789</code> (atau <code>id: 123456789</code>)
+   ➤ Cara hapus: ketik <code>hapusid 123456789</code>
+   ➤ Lihat daftar: ketik <code>listid</code>
+   ➤ Ganti 123456789 dengan ID Telegram orang yang dimaksud
+   ➤ Cara lain: kalau ID yang belum terdaftar menekan tombol Minta akses di pesan terkunci, pemilik otomatis dikabari lewat Telegram berisi nama akun dan ID-nya dengan tombol Setujui (langsung didaftarkan dan dikirimi pesan aktivasi) atau Tolak (tetap terkunci, orangnya otomatis dikirimi pesan penolakan yang ramah, dan tidak dikabarkan lagi ke kamu selama 1 jam). Notifikasi yang sama tidak diulang lebih sering dari sekali per jam. Setelah menekan Minta akses, orang itu juga dikirimi tombol WhatsApp untuk jalur yang lebih cepat
+
+👥 <b>Riwayat Pengunjung /start (khusus pemilik)</b>
+   ➤ Setiap ID Telegram yang menekan tombol START atau mengirim /start untuk PERTAMA KALI otomatis dicatat, dan pemilik langsung dikabari lewat Telegram: nama akun, ID, username, hari, tanggal, bulan, tahun, jam (WIB), status (sudah terdaftar atau belum), dan urutan pengunjung ke berapa
+   ➤ ID yang sama menekan /start lagi tidak dicatat dan tidak dikabarkan lagi. ID pemilik sendiri tidak dicatat. Berlaku untuk semua ID, baik yang sudah terdaftar maupun yang masih terkunci
+   ➤ Catatan permanen disimpan di file Excel (riwayat-pengunjung-bot.xlsx, butuh openpyxl) dan CSV (riwayat-pengunjung-bot.csv), dibuat ulang otomatis tiap ada pengunjung baru. Kolomnya: No, ID Telegram, Nama, Username, Tanggal, Bulan, Tahun, Jam (WIB), Buka Menu Fitur (Ya beserta waktu pertama kali menekan, atau Belum), Minta Akses (Ya beserta waktu pertama kali menekan tombol Minta akses, atau Belum), Status sekarang (otomatis ikut berubah kalau ID didaftarkan atau dihapus)
+   ➤ Ketik <code>pengunjung</code> (atau /pengunjung, riwayat pengunjung) buat melihat total, 10 pengunjung terbaru, dan menerima file Excel-nya di chat. Perintah ini hanya untuk pemilik. Kalau user biasa menanyakannya, jawab bahwa itu fitur khusus pemilik
+
+🚫 <b>Blokir ID (khusus pemilik)</b>
+   ➤ Ketik <code>blok 123456789</code> (atau blokir / ban) buat memblokir sebuah ID. HANYA ID yang sudah terdaftar yang bisa diblokir (ID yang belum terdaftar ditolak karena memang sudah terkunci). Pemilik tidak bisa diblokir
+   ➤ ID yang diblokir TIDAK bisa lagi memakai seluruh fitur bot (AI chat, NAS, pengingat, pencarian, dan lainnya). Yang masih bisa dibuka cuma /start dan Menu Fitur. Pesan lain dibalas peringatan blokir (dengan jeda), tanpa tombol Minta akses
+   ➤ Orang yang diblokir otomatis dikirimi pesan peringatan: ID-nya diblokir developer karena terdeteksi melanggar aturan bot, tidak bisa lagi memakai seluruh fitur, dan blokir bisa dibuka kalau dia mengakui kesalahan dan menerima sanksi (termasuk pembayaran sesuai kesepakatan), disertai tombol WhatsApp developer dengan pesan siap kirim
+   ➤ Ketik <code>bukablok 123456789</code> (atau unblok / unban) buat membuka blokir. ID itu otomatis terdaftar lagi ke sistem (didaftarkan ulang kalau sempat terhapus) dan bisa memakai seluruh fitur kembali, tanpa daftar ulang. Orangnya dikirimi pesan kabar baik
+   ➤ Ketik <code>listblok</code> buat melihat semua ID yang sedang diblokir. Di catatan Excel riwayat pengunjung, kolom Status sekarang ID itu berubah jadi Diblokir (baris merah). Pengingat, info terjadwal, laporan harian, dan pengumuman fitur tidak dikirim ke ID yang diblokir. Kalau user biasa menanyakan fitur ini, jawab bahwa itu khusus pemilik
+
+👨‍💻 <b>Developer Project Home Lab Ini</b>
+   ➤ Nama bot: Ai Agent Tools (dibuat oleh tim MP / Minions Project) (judul sambutan: Ai Agent Tools), versi: Lokal 792. Saat pengguna mengetik /start, bot menampilkan banner, lalu pesan sambutan (informasi bot: developer Moh Hilmi Mulia Rahardyan, nama bot Ai Agent Tools, tim pembuat MP (Minions Project), link portofolio dan sertifikat, versi; lalu ringkasan fitur untuk semua pengguna tanpa fitur khusus pemilik) dengan salam memakai nama akun Telegram pengguna, lalu tombol 📖 Menu Fitur yang bila ditekan menampilkan daftar semua fitur, diakhiri tombol Status
+   ➤ Dibuat oleh Moh Hilmi Mulia R, pelajar jurusan TITL (Teknik Instalasi Tenaga Listrik) di SMKN 1 Singosari (https://smkn1singosari.sch.id/), developer berbakat dengan hobi di bidang elektro, frontend web, planning web, dan otomatisasi elektro
+   ➤ Di pesan sambutan /start ada dua angka: Total User (jumlah ID yang terdaftar, yaitu pemilik ditambah pengguna tambahan) dan Total Riwayat User (jumlah semua orang berbeda yang pernah menekan /start di bot ini sejak awal, terdaftar atau tidak; bertambah otomatis satu tiap ada ID berbeda yang menekan /start untuk pertama kali, menekan /start lagi tidak menambah)
+   ➤ Portofolio: https://portofolio-by-mp.github.io/Data-percobaan-/
+   ➤ Sertifikat Google Student Developer: https://me.developers.google.com/u/hilmistudentdevmalang
+
+👇 <b>Tap tombol di bawah buat mulai</b>
