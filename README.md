@@ -560,12 +560,21 @@ git clone https://github.com/devminionprojects/bot-telegram-by-devmp.git
 cd bot-telegram-by-devmp
 
 # Salin ke NAMA YANG BENAR di folder home
-cp telegram-control-local_public.sh ~/telegram-control-local.sh
+cp telegram-control-local-opensource.sh ~/telegram-control-local.sh
 chmod +x ~/telegram-control-local.sh
 ```
 
+Alternatif jika kamu sudah memasang GitHub CLI (`gh`) dan sudah login (`gh auth login`):
+
+```bash
+gh repo clone devminionprojects/bot-telegram-by-devmp
+cd bot-telegram-by-devmp
+```
+
+> ℹ️ `git clone` tidak butuh akun GitHub dan sudah cukup untuk repo publik; `gh` hanya alternatif. `gh` tidak terpasang secara bawaan di Termux, jadi gunakan `git clone` kalau ragu.
+
 > ⚠️ **Nama file harus `telegram-control-local.sh` (atau `telegram-control.sh`).**
-> Perintah `status` mencari proses dengan nama itu; file bernama `telegram-control-local_public.sh` akan membuat status bot selalu tampil ❌ walau bot berjalan. Itu sebabnya file disalin dengan nama baru.
+> Perintah `status` mencari proses dengan nama itu; file bernama `telegram-control-local-opensource.sh` akan membuat status bot selalu tampil ❌ walau bot berjalan. Itu sebabnya file disalin dengan nama baru.
 > Shebang script: `#!/data/data/com.termux/files/usr/bin/bash`.
 
 ✅ **Cek:** `bash -n ~/telegram-control-local.sh && echo "sintaks OK"`
